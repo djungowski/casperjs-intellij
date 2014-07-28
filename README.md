@@ -1,5 +1,5 @@
-casperjs-intellij
-=================
+CasperJS for IntelliJ
+=====================
 
 A plugin for IntelliJ for running CasperJS Tests. With graphical analysis, screenshot on failure, etc.
 
