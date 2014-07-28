@@ -1,0 +1,41 @@
+<idea-plugin version="2">
+  <id>de.djungowski.casperjs.runner</id>
+  <name>CasperJS</name>
+  <version>1.0</version>
+  <vendor email="support@yourcompany.com" url="http://www.agileblog.org">Dominik Jungowski</vendor>
+
+  <description><![CDATA[
+      Run CasperJS Tests from inside IntelliJ
+    ]]></description>
+
+  <change-notes><![CDATA[
+      * New plugin
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+      <configurationType implementation="RunConfiguration" />
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+  </actions>
+
+</idea-plugin>
