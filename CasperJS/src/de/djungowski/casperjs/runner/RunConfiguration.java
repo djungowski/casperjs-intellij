@@ -1,43 +1,35 @@
 package de.djungowski.casperjs.runner;
 
+import com.intellij.execution.ExecutionException;
+import com.intellij.execution.Executor;
 import com.intellij.execution.configurations.ConfigurationFactory;
-import com.intellij.execution.configurations.ConfigurationType;
-import de.djungowski.casperjs.icon.Icons;
+import com.intellij.execution.configurations.LocatableConfigurationBase;
+import com.intellij.execution.configurations.RunProfileState;
+import com.intellij.execution.runners.ExecutionEnvironment;
+import com.intellij.openapi.options.SettingsEditor;
+import de.djungowski.casperjs.ui.RunConfigurationForm;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import com.intellij.openapi.project.Project;
 
-import javax.swing.*;
+/**
+ * Created by djungowski on 29.07.14.
+ */
+public class RunConfiguration extends LocatableConfigurationBase {
 
-public class RunConfiguration implements ConfigurationType {
-
-	private CasperJSConfigurationFactory configurationFactory;
-
-	public RunConfiguration() {
-		this.configurationFactory = new CasperJSConfigurationFactory(this);
+	public RunConfiguration(Project project, ConfigurationFactory factory, String name) {
+		super(project, factory, name);
 	}
 
+	@Nullable
 	@Override
-	public String getDisplayName() {
-		return "CasperJS";
-	}
-
-	@Override
-	public Icon getIcon() {
-		return Icons.basicIcon16px();
+	public RunProfileState getState(@NotNull Executor executor, @NotNull ExecutionEnvironment environment) throws ExecutionException {
+		return null;
 	}
 
 	@NotNull
 	@Override
-	public String getId() {
-		return "CasperJS";
-	}
-
-	@Override
-	public String getConfigurationTypeDescription() {
-		return "A CasperJS runner";
-	}
-
-	@Override
-	public ConfigurationFactory[] getConfigurationFactories() {
-		return new CasperJSConfigurationFactory[]{ configurationFactory };
+	public SettingsEditor<? extends com.intellij.execution.configurations.RunConfiguration> getConfigurationEditor() {
+		return new RunConfigurationForm();
 	}
 }

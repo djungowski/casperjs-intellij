@@ -12,6 +12,6 @@ public class CasperJSConfigurationFactory extends ConfigurationFactory {
 
 	@Override
 	public com.intellij.execution.configurations.RunConfiguration createTemplateConfiguration(Project project) {
-		return null;
+		return new RunConfiguration(project, this, "CasperJS");
 	}
 }
