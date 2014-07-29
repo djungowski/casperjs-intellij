@@ -23,7 +23,7 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-      <configurationType implementation="RunConfiguration" />
+      <configurationType implementation="de.djungowski.casperjs.runner.RunConfiguration" />
   </extensions>
 
   <application-components>
