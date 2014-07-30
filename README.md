@@ -1,6 +1,6 @@
-CasperJS for IntelliJ
-=====================
+CasperJS Plugin for IntelliJ
+============================
 
-A plugin for IntelliJ for running CasperJS Tests. With graphical analysis, screenshot on failure, etc.
+A plugin for IntelliJ for running CasperJS Tests. With graphical output, screenshot on failure, etc.
 
-Well, it isn't yet. But someday, it will be ;-)
+Status: Work in Progress, no usable version yet.
