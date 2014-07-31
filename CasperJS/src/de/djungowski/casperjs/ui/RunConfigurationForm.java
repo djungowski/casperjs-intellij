@@ -2,6 +2,7 @@ package de.djungowski.casperjs.ui;
 
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SettingsEditor;
+import com.intellij.openapi.ui.TextFieldWithBrowseButton;
 import de.djungowski.casperjs.runner.RunConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,10 +13,8 @@ import javax.swing.*;
  */
 public class RunConfigurationForm extends SettingsEditor<RunConfiguration> {
 	private JPanel component;
-	private JTextField textField1;
 	private JCheckBox takeScreenshotOnFailureCheckBox;
 	private JTextArea textArea1;
-	private JTextField textField2;
 
 	@Override
 	protected void resetEditorFrom(RunConfiguration s) {
@@ -31,5 +30,9 @@ public class RunConfigurationForm extends SettingsEditor<RunConfiguration> {
 	@Override
 	protected JComponent createEditor() {
 		return component;
+	}
+
+	private void createUIComponents() {
+		// TODO: place custom component creation code here
 	}
 }
