@@ -13,6 +13,9 @@ import javax.swing.*;
 public class RunConfigurationForm extends SettingsEditor<RunConfiguration> {
 	private JPanel component;
 	private JTextField textField1;
+	private JCheckBox takeScreenshotOnFailureCheckBox;
+	private JTextArea textArea1;
+	private JTextField textField2;
 
 	@Override
 	protected void resetEditorFrom(RunConfiguration s) {
