@@ -58,7 +58,7 @@
         <properties/>
         <border type="etched"/>
         <children>
-          <component id="ce151" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+          <component id="ce151" class="javax.swing.JTextArea" binding="testFiles">
             <constraints/>
             <properties/>
           </component>
@@ -72,7 +72,7 @@
           <text value="(Separate files or folders by new line)"/>
         </properties>
       </component>
-      <component id="b508b" class="com.intellij.openapi.ui.TextFieldWithBrowseButton">
+      <component id="b508b" class="com.intellij.openapi.ui.TextFieldWithBrowseButton" binding="casperBinary">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="400" height="-1"/>
@@ -80,7 +80,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="ff5cb" class="com.intellij.openapi.ui.TextFieldWithBrowseButton">
+      <component id="ff5cb" class="com.intellij.openapi.ui.TextFieldWithBrowseButton" binding="workingDirectory">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="400" height="-1"/>
